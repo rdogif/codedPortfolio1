@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,805;1,805&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f19d30c178.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: rgb(23, 6, 39);
+        color: white;
+        text-align: center;
+        font-family: "lato", sans-serif;
+        
+    }
+    body > h1:first-of-type {
+        margin-top: 10px;
+        text-shadow: 4px 4px 10px rgb(0, 0, 0);
+        font-size: 5em;
+    }
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .box {
+        box-shadow: 0px 0px 20px 0px rgb(134, 37, 118);
+        border: 4px rgb(134, 37, 118) solid;
+        border-radius: 10%;
+        width: 300px;
+        height: 400px;
+        color: rgb(134, 37, 118);
+    }
+    .box:hover{
+        box-shadow: 0px 0px 20px 0px rgb(255, 196, 245);
+        color: rgb(255, 196, 245);
+        
+        cursor: pointer;
+    }
+    .box:active {
+        box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+</style>
+<body>
+    <h1>Quick Links for rishaandas.com</h1>
+    <div class="container">
+        <a href="https://rishaandas.com/portfolio/" target="_self" style="text-decoration: none;"> <div class="box"><i style="margin-top: 30%;" class="fa-solid fa-briefcase fa-10x"></i><h1>Portfolio</h1></div> </a>
+        <a href="https://rishaandas.com/stankify/" target="_self" style="text-decoration: none;"><div class="box" ><i style="margin-top: 30%;" class="fa-brands fa-spotify fa-10x"></i><h1>stankify</h1></div></a>
+        
+
+
+
+
+
+
+    </div>
+</body>
+</html>
