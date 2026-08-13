@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f19d30c178.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+    user-select: none;
+}
+html {
+    scrollbar-width: none;
+    
+}
+::-webkit-scrollbar{
+    width: none;
+}
+ body {
+    
+    color: antiquewhite;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(10, 14, 57);
+    
+ }
+
+ .shadowed {
+    box-shadow: black 5px 5px 10px;
+ }
+
+ .header{
+    font-size: 2em;
+ }
+.flexer1{
+    display: flex;
+    position: relative;
+}
+
+.pop{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.3s ease ;
+}
+.pop.show {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+.flexer2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: auto;
+
+}
+.container {
+    margin: 10px 20px;
+    
+    border-radius: 10%;
+    background: linear-gradient(135deg,rgb(12, 17, 68) 0%, rgba(9, 9, 121, 1) 100%);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px rgb(112, 112, 112);
+    transition: color ease 0.1s;
+}
+.container:hover {
+    color: blueviolet;
+    outline: 2px solid blueviolet;
+}
+.container:active {
+    color: purple;
+}
+.o {
+     box-shadow:black 5px 5px 10px, rgba(255, 255, 255, 0) 0px 0px 0px 0px inset, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px inset;
+    transition: ease 0.2s;
+}
+.o:hover{
+    
+    box-shadow: black 5px 5px 10px, rgb(48, 34, 154) 3px 3px 10px 0px inset, rgb(0, 0, 0) -3px -3px 10px 0px inset;
+}
+.o2{
+    height: auto; text-align: center; display: flex; justify-content: center; width: 400px;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(59, 16, 90); border-radius: 2em; padding: 10px; margin: 25px 0px;
+transition: background 0.1s ease;
+transition: transform 0.3s ease;
+}
+
+.o2:hover{
+    cursor: pointer;
+    background-color: rgb(87, 18, 152);
+    outline: 1px rgb(0, 0, 0) solid;
+}
+
+
+
+
+
+</style>
+<body>
+<nav style="z-index: 2; background-color: rgb(19, 26, 103); 
+width: auto; height: fit-content; position: relative;" >
+<div style=" margin: 0px; padding: 0px; font-size: 3em; margin-left: 10px; font-weight: bolder; text-shadow: 0px 0px 10px black;">Rishaan's Portfolio</div>
+</nav>
+
+<div class="flexer1 pop" style= "margin-top: 50px; z-index: 1;">
+<div class="shadowed" style="height: fit-content; background-color: rgb(16, 22, 90); border-radius: 2em; margin-top: 80px;">
+<h1 class="header" style="margin-left: 20px; margin-bottom: 0px;">Introduction</h1>    
+<p style="margin: 20px; margin-top: 0px;">My name is Rishaan and i have been a programmer for as long as i can remember. I am currently learning Html, CSS, and JS and i have knowledge of Lua, Python, and Java. I also do game development work, working in multiply game engines like Roblox Studio, Unreal Engine 5, and more.</p>
+</div>
+<img style=" margin: 10px; margin-top: 90px;" width="400" class="fa-solid fa-code fa-8x">
+</div>
+<div class="pop shadowed" style="height: fit-content; text-align: center; display: flex; justify-content: center; width: auto;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(16, 22, 90); padding: 10px; border-radius: 2em; margin: 30px 250px;">MY SOCIALS</div>
+<div class="flexer2 pop">
+    <a href="https://github.com/rdogif" style="text-decoration: none; color: unset;" target="_blank"><div class="container shadowed">Github<br><i style=" margin-top: 20px;" class="fa-brands fa-github fa-2x"></i><br style="margin-bottom: 20px;">rdogif</div></a>
+    <a href="https://www.instagram.com/rishaan.ds/" style="text-decoration: none; color: unset;" target="_blank"><div class="container shadowed">Instagram<br><i style="margin-top: 20px;" class="fa-brands fa-instagram fa-2x"></i><br style="margin-bottom: 20px;">rishaan.ds</div></a>
+</div>
+<hr style="border-radius: 100%; height: 10px; background-color: rgb(12, 4, 36); border: none; margin-bottom: 70px;">
+
+<div class="pop shadowed" style="height: fit-content; text-align: center; display: flex; justify-content: center; width: auto;
+font-size: 2em; font-weight: 1000;
+
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px; margin: 50px 250px;">TIMELINE</div>
+
+<div id="skip" style="display: flex; flex-direction: column; align-items: center;">
+<div class="pop shadowed o2">SKIP</div>
+
+
+<div class="pop shadowed o" style="height: auto; text-align: center; display: flex; justify-content: center; width: 400px;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px; margin-top: 50px;">2016<br>I was introduced to Roblox by babysitter's son</div>
+<div class="pop shadowed o" style="height: auto; text-align: center; display: flex; justify-content: center; width: 400px;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px 30px; margin-top: 50px ;">2017<br>I learnt about Roblox Studio and started creating, using free models</div>
+<div class="pop shadowed o" style="height: auto; text-align: center; display: flex; justify-content: center; width: 400px;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px; margin-top: 50px;">2021<br>Started learning lua for Roblox Studio</div>
+<div class="pop shadowed o" style="height: auto; text-align: center; display: flex; justify-content: center; width: 400px;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px; margin-top: 50px;">2022<br>Got interested in coding, started learning basic python</div>
+<div class="pop shadowed o" style="height: auto; text-align: center; display: flex; justify-content: center; width: 400px;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px; margin-top: 50px;">2025<br>Learnt more advanced python and Java</div>
+<div class="pop shadowed o" style="height: auto; text-align: center; display: flex; justify-content: center; width: 400px;
+font-size: 2em; font-weight: 1000;
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px; margin-top: 50px;">2026<br>Learning Html,CSS, and Javascript.</div>
+
+
+
+</div>
+<div id="arrival"></div>
+<hr style="border-radius: 100%; height: 10px; background-color: rgb(12, 4, 36); border: none; margin-bottom: 70px;">
+<div class="pop shadowed" style="height: fit-content; text-align: center; display: flex; justify-content: center; width: auto;
+font-size: 2em; font-weight: 1000;
+
+background-color: rgb(16, 22, 90); border-radius: 2em; padding: 10px; margin: 10px 250px;">  OTHER  </div>
+
+<div class="flexer2 pop">
+    
+<a  href="https://rdogif.github.io/portfolio1/" style="text-decoration: none; color: unset;" target="_blank"> <div class="container" style="align-items: center; display: flex; flex-direction: column; justify-content: center;">Old Projects<i class="fa-brands fa-github"></i></div></a>
+<a  href="https://rdogif.github.io/portfolio1/" style="text-decoration: none; color: unset;" target="_blank"> <div class="container" style="align-items: center; display: flex; flex-direction: column; justify-content: center;">Roblox Creations<i class="fa-brands fa-roblox-creator-studio"></i></div></a>
+</div>
+</body>
+<script>
+    
+    document.getElementById("skip").addEventListener("click",()=>{
+        document.getElementById("arrival").scrollIntoView({block:"start" ,behavior:"smooth"})
+    })
+
+
+    const poppys = document.querySelectorAll(".pop");
+
+    const observor = new IntersectionObserver((entries)=>{
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+            
+        });
+
+    })
+    poppys.forEach(element =>{
+            observor.observe(element);
+
+    });
+
+
+
+
+</script>
+</html>
