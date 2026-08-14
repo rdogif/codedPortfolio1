@@ -47,13 +47,82 @@
         box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
         color: rgb(255, 255, 255);
     }
+
+    .shake {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    75% {
+        transform: translateX(-15px);
+    }
+}
+
+    .stankpop {
+        
+        width: 500px;
+        height: 500px;
+        position: fixed;
+        top: 100px;
+        backdrop-filter: blur(20px);
+        border: 1px rgb(134, 37, 118) solid;
+        border-radius: 20%;
+    }
+
+    #t{
+        color: white;
+        background: none;
+        border: none;
+        font-size: 1.6em; position: fixed; top: 30px; right: 40px;
+        opacity: 0.5;
+        
+    }
+    #t:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    #stankpass {
+        position: fixed;
+        right: 170px;
+        top: 150px;
+        background: none;
+        border: 3px rgb(134, 37, 118) solid;
+        
+        color: white;
+        outline: none;
+        padding: 10px;
+    }
+    #ew {
+        background: rgb(134, 37, 118, 0.5);
+        color: white;
+        border-color: rgb(134, 37, 118);
+        position: fixed;
+        top: 150px;
+        right: 72px;
+        width: 100px;
+        height: 40px;
+    }
+
 </style>
 <body>
     <h1>Quick Links for rishaandas.com</h1>
     <div class="container">
-        <a href="https://rishaandas.com/portfolio/" target="_self" style="text-decoration: none;"> <div class="box"><i style="margin-top: 30%;" class="fa-solid fa-briefcase fa-10x"></i><h1>Portfolio</h1></div> </a>
-        <a href="https://rishaandas.com/stankify/" target="_self" style="text-decoration: none;"><div class="box" ><i style="margin-top: 30%;" class="fa-brands fa-spotify fa-10x"></i><h1>stankify</h1></div></a>
-        
+        <a href="https://rishaandas.com/portfolio/" target="_self" style="height: fit-content; text-decoration: none;"> <div class="box"><i style="margin-top: 30%;" class="fa-solid fa-briefcase fa-10x"></i><h1>Portfolio</h1></div> </a>
+        <a id="stank"  target="_self" style="height: fit-content; text-decoration: none;"><div class="box" ><i style="margin-top: 30%;" class="fa-brands fa-spotify fa-10x"></i><h1>stankify</h1></div></a>
+        <div class="stankpop"><button id="t"><i   class="fa-solid fa-circle-xmark"></i></button>
+        <h1 style="position: fixed; left: 50px; top: 60px;">Enter password for Stankify</h1>
+        <form id="forms"><input enterkeyhint="enter" id="stankpass" ><button type="submit" id="ew">Submit</button></form>
+
+        </div>
 
 
 
@@ -61,5 +130,38 @@
 
 
     </div>
+    
 </body>
+<script>
+    document.querySelector(".stankpop").style.display = "none";
+    document.getElementById("stank").addEventListener("click",()=>{
+        document.querySelector(".stankpop").style.display = "";
+    })
+
+    const form = document.getElementById("forms");
+    const pass = document.getElementById("stankpass");
+
+    form.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        if(pass.value==="stunk") {
+            open("https://rishaandas.com/stankify/", "_self");
+        }else{
+            const popup = document.querySelector(".stankpop");
+
+    popup.classList.remove("shake");
+    void popup.offsetWidth;
+    popup.classList.add("shake");
+        }
+    })
+    
+    document.getElementById("t").addEventListener("click",()=>{
+
+ document.querySelector(".stankpop").style.display = "none";
+    })
+       
+    
+
+</script>
+
+
 </html>
