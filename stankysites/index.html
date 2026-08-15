@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staned up Hyperlinks</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,805;1,805&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f19d30c178.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: rgb(9, 39, 6);
+        color: white;
+        text-align: center;
+        font-family: "lato", sans-serif;
+        
+    }
+    body > h1:first-of-type {
+        margin-top: 10px;
+        text-shadow: 4px 4px 10px rgb(0, 0, 0);
+        font-size: 5em;
+    }
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .box {
+        box-shadow: 0px 0px 20px 0px rgb(37, 134, 45);
+        border: 4px rgb(37, 134, 37) solid;
+        border-radius: 10%;
+        width: 300px;
+        height: 400px;
+        color: rgb(37, 134, 60);
+    }
+    .box:hover{
+        box-shadow: 0px 0px 20px 0px rgb(196, 255, 201);
+        color: rgb(196, 255, 208);
+        
+        cursor: pointer;
+    }
+    .box:active {
+        box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+
+    
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    75% {
+        transform: translateX(-15px);
+    }
+}
+
+    .stankpop {
+        
+        width: 500px;
+        height: 500px;
+        position: fixed;
+        top: 100px;
+        backdrop-filter: blur(20px);
+        border: 1px rgb(134, 37, 118) solid;
+        border-radius: 20%;
+    }
+
+    #t{
+        color: white;
+        background: none;
+        border: none;
+        font-size: 1.6em; position: fixed; top: 30px; right: 40px;
+        opacity: 0.5;
+        
+    }
+    #t:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    #ew {
+        background: rgb(134, 37, 118, 0.5);
+        color: white;
+        border-color: rgb(134, 37, 118);
+        position: fixed;
+        top: 150px;
+        right: 72px;
+        width: 100px;
+        height: 40px;
+    }
+
+</style>
+<body>
+    <h1>Stanky Links for rishaandas.com</h1>
+    <div class="container">
+        <a href="https://rishaandas.com/stankify/" target="_self" style="height: fit-content; text-decoration: none;"> <div class="box"><i style="margin-top: 30%;" class="fa-brands fa-spotify fa-10x"></i><h1>Stankify</h1></div> </a>
+        <a href="https://rishaandas.com/stankysituations/" target="_self" style="height: fit-content; text-decoration: none;"> <div class="box"><i style="margin-top: 30%;" class="fa-solid fa-wand-magic-sparkles fa-10x"></i><h1>StankySituation generator</h1></div> </a>
+
+        
+        
+
+        </div>
+
+
+
+
+
+
+    </div>
+    
+</body>
+<script>
+    
+    
+
+</script>
+
+
+</html>
